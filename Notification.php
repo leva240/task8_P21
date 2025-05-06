@@ -2,10 +2,10 @@
 
 
 interface Notification{
-    public function send ($message);
+    public function send (string $message):string;
 
-    public function getStatus();
+    public function getStatus():string;
 
-    public function getType();
+    public function getType():string;
 
 }

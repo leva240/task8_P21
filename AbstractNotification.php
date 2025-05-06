@@ -2,14 +2,13 @@
 
 abstract class AbstractNotification implements Notification{
 
-    public $status;
-    public $timestamp;
+    public string $status;
 
-    public function getStatus(){
+    public function getStatus(): string{
         return $this->status;
     }
 
-    abstract function send($message);
+    abstract function send(string $message):string;
 
-    abstract function getType();
+    abstract function getType():string;
 }

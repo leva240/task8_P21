@@ -10,9 +10,17 @@ $emailNotification = new EmailNotification();
 $smsNotification = new SMSNotification();
 
 
+echo "Email статус: " . $emailNotification->getStatus() . "\n";
+echo "Email тип: " . $emailNotification->getType() . "\n";
+
+echo "SMS статус: " . $smsNotification->getStatus() . "\n";
+echo "SMS тип: " . $smsNotification->getType() . "\n";
+
 
 $emailMessage = $emailNotification->send('Это сообщение было отправлено на Email');
 $smsMessage = $smsNotification->send('Это сообщение было отправлено на SMS');
+
+
 
 
 
