@@ -2,7 +2,7 @@
 
 abstract class AbstractNotification implements Notification{
 
-    public string $status;
+    public bool $status = false;
 
     public function getStatus(): string{
         return $this->status;
