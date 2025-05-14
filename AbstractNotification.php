@@ -2,7 +2,7 @@
 
 abstract class AbstractNotification implements Notification{
 
-    public bool $status = false;
+    public string $status = "Сообщение не было отправлено на Email";
 
     public function getStatus(): string{
         return $this->status;
