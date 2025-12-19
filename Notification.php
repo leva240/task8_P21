@@ -1,7 +1,8 @@
 <?php
 
 
-interface Notification{
+interface Notification
+{
     public function send (string $message):string;
 
     public function getStatus():string;

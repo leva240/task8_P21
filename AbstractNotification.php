@@ -1,10 +1,12 @@
 <?php
 
-abstract class AbstractNotification implements Notification{
+abstract class AbstractNotification implements Notification
+{
 
     public string $status = "Сообщение не было отправлено на Email";
 
-    public function getStatus(): string{
+    public function getStatus(): string
+    {
         return $this->status;
     }
 
